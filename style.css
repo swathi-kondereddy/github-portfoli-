@@ -40,6 +40,38 @@ section{
     z-index: 100;
 
 }
+/* Add this to the end of your CSS file */
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header, nav, main, footer {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .section, .card, .project, .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .logo{
     font-size: 2.5rem;
     color:var(--text-color);
@@ -53,6 +85,7 @@ section{
     font-weight: 700;
 
 }
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--text-color);
